@@ -16,6 +16,7 @@ class DashboardRoute extends Component {
 
   render() {
     const { language, words = [] } = this.context;
+    console.log(this.context, "context for lang and words");
     return (
       <section className="dashboard">
         <h2>{language.name}</h2>

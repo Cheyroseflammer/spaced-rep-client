@@ -17,7 +17,7 @@ export class LanguageProvider extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      lagnuage: {},
+      language: {},
       words: [],
       nextWord: "",
       wordCorrectCount: 0,

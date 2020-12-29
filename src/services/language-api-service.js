@@ -1,5 +1,5 @@
 import config from "../config";
-// import TokenService from "./token-service";
+import TokenService from "./token-service";
 
 const LanguageService = {
   fetchLanguage() {
@@ -7,7 +7,7 @@ const LanguageService = {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
-        // Authorization: `Bearer ${TokenService.getAuthToken()}`,
+        Authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
     }).then((res) => (!res.ok ? Promise.reject(res.statusText) : res.json()));
   },
@@ -15,9 +15,9 @@ const LanguageService = {
   getLanguageHead() {
     return fetch(`${config.API_ENDPOINT}/language/head`, {
       method: "GET",
-      // headers: {
-      //   Authorization: `Bearer ${TokenService.getAuthToken()}`,
-      // },
+      headers: {
+        Authorization: `Bearer ${TokenService.getAuthToken()}`,
+      },
     }).then((res) =>
       !res.ok ? res.json().then((e) => Promise.reject(e)) : res.json()
     );
@@ -28,7 +28,7 @@ const LanguageService = {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        // Authorization: `Bearer ${TokenService.getAuthToken()}`,
+        Authorization: `Bearer ${TokenService.getAuthToken()}`,
       },
       body: JSON.stringify({ guess: guess, word: word }),
     }).then((res) =>
