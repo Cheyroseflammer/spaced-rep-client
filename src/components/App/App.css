@@ -8,3 +8,22 @@ Button {
 li {
   list-style-type: none;
 }
+
+@media only screen and (max-width: 650px) {
+  form {
+  }
+  Button {
+    width: 50%;
+    margin-top: 20px;
+  }
+  Input {
+    width: 100%;
+    padding: 5px;
+    align-self: center;
+  }
+  Label {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+  }
+}
