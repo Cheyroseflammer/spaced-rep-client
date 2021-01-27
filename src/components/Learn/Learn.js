@@ -30,7 +30,7 @@ export default class Learn extends React.Component {
             <h3>{orig}</h3>
             <form className="formguess" onSubmit={submitHandler}>
               <label htmlFor="guess-input">
-                What is the translation for this word?
+                What is the correct translation for this word?
               </label>
               <input id="guess-input" name="guess" type="text" required />
               <Button type="submit" className="btn">

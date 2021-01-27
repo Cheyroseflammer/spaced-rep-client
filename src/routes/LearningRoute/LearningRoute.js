@@ -73,13 +73,13 @@ class LearningRoute extends Component {
     return (
       <React.Fragment>
         <section>
-          {isCorrect ? <h2>Correctomundo!</h2> : <h2>No Way Jose!</h2>}
+          {isCorrect ? <h2>Correct! ✔️</h2> : <h2>That is not correct! ❌</h2>}
           <p>Total Score: {totalScore}</p>
         </section>
         <section>
           <p>
-            The correct translation for {this.context.nextWord} was {answer} and
-            you chose {this.state.guess}!
+            The correct translation for <b> {this.context.nextWord} </b> was
+            <i> {answer} </i> and you chose <b>{this.state.guess}</b>!
           </p>
           <Button onClick={() => this.handleNextWord(this.state.results)}>
             Next

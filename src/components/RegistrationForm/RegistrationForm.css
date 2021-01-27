@@ -1,44 +1,11 @@
-form {
-  background-color: #edf6f9;
-  color: black;
-  padding: 5px;
-  border-radius: 5px;
-}
-
-div {
-  padding: 8px;
-  display: block;
-}
 Label {
   display: inline-block;
-  width: 150px;
+  float: left;
+  clear: left;
+  width: 250px;
   text-align: right;
-  font-size: 14px;
-  padding-right: 10px;
 }
-
-Button {
-  background-color: black;
-  border-radius: 6px;
-  border: 0;
-  color: #cacaca;
-  font-size: 14px;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-Button:hover {
-  background-color: white;
-  color: black;
-}
-
 Input {
-  border-radius: 5px;
-}
-
-footer {
-  margin-left: 10%;
+  display: inline-block;
+  float: left;
 }
