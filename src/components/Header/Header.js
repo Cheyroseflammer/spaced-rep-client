@@ -36,7 +36,7 @@ class Header extends Component {
     return (
       <header>
         <h1>
-          <Link to="/">Spaced Repetition</Link>
+          <Link to="/">Learn German</Link>
         </h1>
         {TokenService.hasAuthToken()
           ? this.renderLogoutLink()
